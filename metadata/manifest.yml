@@ -1,11 +1,11 @@
 ---
 Name: mysql
 Description: MySQL is a multi-user, multi-threaded SQL database server.
-Version: '5.7.12'
+Version: '5.7.16'
 License: GPL
 Vendor: Oracle
 Website: http://www.mysql.com
-Display-Name: MySQL 5.7.12
+Display-Name: MySQL 5.7.16
 Cartridge-Short-Name: MYSQL
 Cartridge-Version: '1.0.1'
 Cartridge-Vendor: icflorescu
