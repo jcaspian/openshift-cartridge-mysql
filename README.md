@@ -2,7 +2,7 @@
 
 ![mysql-openshift](https://cloud.githubusercontent.com/assets/581999/13375581/503e858e-ddac-11e5-96de-b4cd718e7cc3.png)
 
-This is a custom OpenShift cartridge providing the latest MySQL version (5.7.11 as of February 27th 2016).
+This is a custom OpenShift cartridge providing the latest MySQL version (5.7.16 as of October 14th 2016).
 
 ## Why
 
@@ -16,7 +16,7 @@ When you need a quick and unsofisticated solution to run your application with t
 
 To install this cartridge in your existing OpenShift application, go to **"See the list of cartridges you can add"**, paste the URL below in **"Install your own cartridge"** textbox at the bottom of the page and click "Next".
 
-    http://cartreflect-claytondev.rhcloud.com/github/icflorescu/openshift-cartridge-mysql
+    https://raw.githubusercontent.com/jcaspian/openshift-cartridge-mysql/master/openshift_install_manifest
 
 ## Setting up
 
@@ -56,7 +56,7 @@ Use `DB_HOST` and `DB_PORT` environment variables to connect from an application
 - Can't guarantee this cartridge is production-ready. Some people use it though (on **their own responsibility**).
 - This is a **lean cartridge**. A standard MySQL installation takes a huge amount of space (over 1.5GB for MySQL 5.7.5). To save space, just the necessary MySQL binaries are installed.
 - In order to avoid an OpenShift configuration conflict, **the server instance is listening on 13306 instead of the standard MySQL port 3306**.
-- Don't hesitate to make a pull-request with an updated version in [this file](https://github.com/icflorescu/openshift-cartridge-mysql/blob/master/metadata/manifest.yml#L4) if you notice this cartridge version is behind the latest [MySQL release](http://dev.mysql.com/downloads/mysql).
+- Don't hesitate to make a pull-request with an updated version in [this file](https://github.com/jcaspian/openshift-cartridge-mysql/blob/master/metadata/manifest.yml#L4) if you notice this cartridge version is behind the latest [MySQL release](http://dev.mysql.com/downloads/mysql).
 - **Don't open issues in this repository to ask questions about `rhc port-forward`**. Please refer to the [OpenShift documentation](https://developers.openshift.com/en/managing-port-forwarding.html) to learn about it. I am not an employee of RedHat / OpenShift, nor do I have any form of consultancy agreement with them and the fact that I open-sourced this cartridge doesn't mean I'm willing to offer free advice on the subject. Pull-requests and suggestions are always welcome, though.
 
 ## TODO
